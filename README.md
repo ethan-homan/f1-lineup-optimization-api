@@ -7,8 +7,10 @@ It will likely take ~5 seconds to load from a cold start since the minimum insta
 
 # Run locally with Docker
 
-The docker build could take a couple of minutes on the first run since we need to build GLPK.
+Running this locally is easiest with Docker:
 
 ```bash
 docker build --tag f1-lp-api . && docker run --publish 8000:5000 f1-lp-api
 ```
+
+Docker will take a couple of minutes the first time since we need to build GLPK.
